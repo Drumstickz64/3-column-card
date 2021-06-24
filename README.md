@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://www.frontendmentor.io/solutions/css-grid-css-custom-variables-Zfud6il5t)
-- Live Site URL: [](https://drumstickz-cards.netlify.app)
+- [Solution URL](https://www.frontendmentor.io/solutions/css-grid-css-custom-variables-Zfud6il5t)
+- [Live Site URL](https://drumstickz-cards.netlify.app)
 
 ## My process
 
