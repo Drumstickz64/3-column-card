@@ -40,6 +40,7 @@ h4 {
   display: grid;
   justify-items: start;
   gap: 1rem;
+  max-width: 19em;
   padding: 3em;
   background: var(--card-bg-color);
 }
@@ -93,4 +94,26 @@ h4 {
 
 .card--cyan-dark {
   --card-bg-color: var(--clr-cyan-800);
+}
+
+@media screen and (min-width: 57rem) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card:first-of-type {
+    border-top-left-radius: var(--card-border-radius);
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--card-border-radius);
+  }
+
+  .card:last-of-type {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: var(--card-border-radius);
+    border-top-right-radius: var(--card-border-radius);
+  }
+
+  .card__cta {
+    margin-top: 5rem;
+  }
 }
