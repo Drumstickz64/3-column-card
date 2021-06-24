@@ -40,7 +40,7 @@ h4 {
   display: grid;
   justify-items: start;
   gap: 1rem;
-  max-width: 19em;
+  max-width: 19.2em;
   padding: 3em;
   background: var(--card-bg-color);
 }
@@ -77,6 +77,21 @@ h4 {
   background: var(--clr-gray-200);
   border-radius: 999rem;
   color: #000;
+}
+
+.btn:hover,
+.btn:focus {
+  outline: 0.125em solid var(--clr-gray-200);
+  color: var(--clr-gray-200);
+  background: none;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+.btn:not(:disabled):active {
+  transform: scale(0.95);
 }
 
 .card__cta {
