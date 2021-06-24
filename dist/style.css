@@ -1,0 +1,24 @@
+@import url("reset.css");
+
+:root {
+  --clr-orange-400: hsl(31, 77%, 52%);
+  --clr-cyan-500: hsl(184, 100%, 22%);
+  --clr-cyan-800: hsl(179, 100%, 13%);
+  --clr-white-trans: hsla(0, 0%, 100%, 0.75);
+  --clr-gray-200: hsl(0, 0%, 95%);
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+body {
+  font-size: 0.9375rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: var(--fw-bold);
+}
