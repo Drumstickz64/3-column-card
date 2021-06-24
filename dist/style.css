@@ -112,6 +112,11 @@ h4 {
 }
 
 @media screen and (min-width: 57rem) {
+  body {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
