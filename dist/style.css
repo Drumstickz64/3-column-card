@@ -8,11 +8,16 @@
   --clr-gray-200: hsl(0, 0%, 95%);
   --fw-regular: 400;
   --fw-bold: 700;
+  --fs-lg: 2.5rem;
 }
 
 body {
   font-size: 0.9375rem;
   font-family: "Lexend Deca", sans-serif;
+  display: grid;
+  place-items: center;
+  padding: 4rem 1.5rem;
+  background: var(--clr-gray-200);
 }
 
 h1,
@@ -21,4 +26,71 @@ h3,
 h4 {
   font-family: "Big Shoulders Display", cursive;
   font-weight: var(--fw-bold);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  --card-bg-color: hsl(0, 0%, 0%);
+  --card-border-radius: 10px;
+
+  display: grid;
+  justify-items: start;
+  gap: 1rem;
+  padding: 3em;
+  background: var(--card-bg-color);
+}
+
+.card:first-of-type {
+  border-top-left-radius: var(--card-border-radius);
+  border-top-right-radius: var(--card-border-radius);
+}
+
+.card:last-of-type {
+  border-bottom-left-radius: var(--card-border-radius);
+  border-bottom-right-radius: var(--card-border-radius);
+}
+
+.card__icon svg {
+  transform: scale(0.85);
+}
+
+.card__heading {
+  text-transform: uppercase;
+  font-size: var(--fs-lg);
+  color: var(--clr-gray-200);
+}
+
+.card__desc {
+  color: var(--clr-white-trans);
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 1em 2em;
+  background: var(--clr-gray-200);
+  border-radius: 999rem;
+  color: #000;
+}
+
+.card__cta {
+  margin-top: 0.5rem;
+  color: var(--card-bg-color);
+}
+
+.card--orange {
+  --card-bg-color: var(--clr-orange-400);
+}
+
+.card--cyan {
+  --card-bg-color: var(--clr-cyan-500);
+}
+
+.card--cyan-dark {
+  --card-bg-color: var(--clr-cyan-800);
 }
